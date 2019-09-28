@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page, count is {{count}}</h1>
+    <h1 @click="increment">This is an about page, count is {{count}}</h1>
   </div>
 </template>
 
@@ -9,6 +9,11 @@ export default {
   computed: {
     count () {
       return this.$store.state.count
+    }
+  },
+  methods: {
+    increment () {
+      this.$store.commit('increment')
     }
   }
 }
