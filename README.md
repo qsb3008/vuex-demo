@@ -25,5 +25,8 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+本示例为低配版vuex，仅实现了最基本的全局store的获取和更改，不涉及命名空间、异步等功能
+
+核心代码在 `./src/plugins/store.js`文件
+
+
